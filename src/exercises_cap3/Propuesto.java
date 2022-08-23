@@ -93,13 +93,13 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         // EJERCICIO 18
-        //createEmployee(sc);
+        // createEmployee(sc);
 
         // EJERCICIO 19
-        //equilateralTriangle(sc);
+        // equilateralTriangle(sc);
         
         // EJERCICIO 21
-        //overallTriangle(sc);
+        // overallTriangle(sc);
     }
 
 }
