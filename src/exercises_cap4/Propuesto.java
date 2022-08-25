@@ -12,6 +12,42 @@ import java.util.Scanner;
  */
 public class Propuesto {
 
+    public static void empleado(Scanner sc) {
+        System.out.println("ingrese nombre empleado ");
+        String nombre = sc.nextLine();
+        System.out.println("ingrese salario empleado por Hora ");
+        double salario = sc.nextDouble();
+        System.out.println("ingrese horas que trabaja el empleado al mes ");
+        double horas = sc.nextDouble();
+        double comprobacion = salario * horas;
+        if (comprobacion < 450000) {
+            System.out.println("nombre empleado " + nombre);
+        } else {
+            System.out.println("nombre empleado " + nombre);
+            System.out.println("salario mensual " + comprobacion);
+        }
+
+    }
+
+    public static void esferas(Scanner sc) {
+        System.out.println("ingrese peso de esfera A ");
+        double esferaA = sc.nextDouble();
+        System.out.println("ingrese peso de esfera B ");
+        double esferaB = sc.nextDouble();
+        System.out.println("ingrese peso de esfera C ");
+        double esferaC = sc.nextDouble();
+        if (esferaA == esferaB && esferaC == esferaA) {
+            System.out.println("Las 3 esferas pesan lo mismo ");
+        } else if (esferaA >= esferaB && esferaA >= esferaC) {
+            System.out.println("La esfera A es la mas pesada ");
+        } else if (esferaB >= esferaA && esferaB >= esferaC) {
+            System.out.println("La esfera B es la mas pesada ");
+        } else {
+            System.out.println("La esfera C es la mas pesada");
+        }
+
+    }
+
     public static void cuadratica(Scanner sc) {
         double a, b, c, d;
         System.out.print("Ingrese el valor de a: ");
@@ -35,8 +71,12 @@ public class Propuesto {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        //ejercicio 22
+        //empleado(sc);
         //Ejercicio 23
         //cuadratica(sc);
+        //ejercicio 24
+        //esferas(sc);
 
     }
 
