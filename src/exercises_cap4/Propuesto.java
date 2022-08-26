@@ -69,16 +69,6 @@ public class Propuesto {
 
     }
     
-    public static void pesoEsferas(Scanner sc){
-        System.out.print("Peso de la esfera a: ");
-        double a = sc.nextDouble();        
-        System.out.print("Peso de la esfera b: ");
-        double b = sc.nextDouble();
-        System.out.print("Peso de la esfera c: ");
-        double c = sc.nextDouble();
-    
-    }
-
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         //ejercicio 22
