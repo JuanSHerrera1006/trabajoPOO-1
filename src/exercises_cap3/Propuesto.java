@@ -10,7 +10,7 @@ import java.util.Scanner;
  *
  * @author cedbo
  */
-public class Main {
+public class Propuesto {
 
     public static boolean isTriangle(double a, double b, double c) {
         return a + b > c && b + c > a && a + c > b;
