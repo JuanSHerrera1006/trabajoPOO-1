@@ -12,35 +12,44 @@ import java.util.Scanner;
  */
 public class Propuesto {
 
-    public static void empleado(Scanner sc) {
-        System.out.println("ingrese nombre empleado ");
-        String nombre = sc.nextLine();
-        System.out.println("ingrese salario empleado por Hora ");
+    public static void employee(Scanner sc) {
+
+        System.out.println("+----------------------------+");
+        System.out.println("|  MOSTRAR DATOS DE EMPLEADO |");
+        System.out.println("+----------------------------+");
+
+        System.out.print("Ingrese nombre del empleado: ");
+        String nombre = sc.nextLine().toUpperCase();
+        System.out.print("Ingrese salario del empleado por hora: ");
         double salario = sc.nextDouble();
-        System.out.println("ingrese horas que trabaja el empleado al mes ");
+        System.out.print("Ingrese las horas que trabaja el empleado al mes: ");
         double horas = sc.nextDouble();
         double comprobacion = salario * horas;
-        if (comprobacion < 450000) {
-            System.out.println("nombre empleado " + nombre);
-        } else {
-            System.out.println("nombre empleado " + nombre);
-            System.out.println("salario mensual " + comprobacion);
-        }
 
+        System.out.println("Nombre del empleado: " + nombre);
+        if (comprobacion > 450000) {
+            System.out.println("Salario mensual: " + comprobacion);
+        }
     }
 
-    public static void esferas(Scanner sc) {
-        System.out.println("ingrese peso de esfera A ");
-        double esferaA = sc.nextDouble();
-        System.out.println("ingrese peso de esfera B ");
-        double esferaB = sc.nextDouble();
-        System.out.println("ingrese peso de esfera C ");
-        double esferaC = sc.nextDouble();
-        if (esferaA == esferaB && esferaC == esferaA) {
+    public static void spheresWeight(Scanner sc) {
+
+        System.out.println("+---------------------------------+");
+        System.out.println("|  CALCULAR ESFERA DE MAYOR PESO  |");
+        System.out.println("+---------------------------------+");
+
+        System.out.print("Ingrese peso de esfera A: ");
+        double sphereA = sc.nextDouble();
+        System.out.print("Ingrese peso de esfera B: ");
+        double sphereB = sc.nextDouble();
+        System.out.print("Ingrese peso de esfera C: ");
+        double sphereC = sc.nextDouble();
+
+        if (sphereA == sphereB && sphereC == sphereA) {
             System.out.println("Las 3 esferas pesan lo mismo ");
-        } else if (esferaA >= esferaB && esferaA >= esferaC) {
+        } else if (sphereA >= sphereB && sphereA >= sphereC) {
             System.out.println("La esfera A es la mas pesada ");
-        } else if (esferaB >= esferaA && esferaB >= esferaC) {
+        } else if (sphereB >= sphereA && sphereB >= sphereC) {
             System.out.println("La esfera B es la mas pesada ");
         } else {
             System.out.println("La esfera C es la mas pesada");
@@ -48,7 +57,11 @@ public class Propuesto {
 
     }
 
-    public static void cuadratica(Scanner sc) {
+    public static void quadraticEC(Scanner sc) {
+        System.out.println("+-----------------------------+");
+        System.out.println("|  SOLUCION DE EC CUADRATICA  |");
+        System.out.println("+-----------------------------+");
+
         double a, b, c, d;
         System.out.print("Ingrese el valor de a: ");
         a = sc.nextDouble();
@@ -63,30 +76,24 @@ public class Propuesto {
             double x1, x2;
             x1 = (-b / 2 * a) + (Math.sqrt(d) / 2 * a);
             x2 = (-b / 2 * a) - (Math.sqrt(d) / 2 * a);
-            System.out.println("Las soluciones son: " + "\nx1: " + x1 + "\nx2: " + x2);
+            System.out.println(
+                    "Las soluciones son: "
+                    + "\nx1: " + x1
+                    + "\nx2: " + x2
+            );
 
         }
 
     }
-    
-    public static void pesoEsferas(Scanner sc){
-        System.out.print("Peso de la esfera a: ");
-        double a = sc.nextDouble();        
-        System.out.print("Peso de la esfera b: ");
-        double b = sc.nextDouble();
-        System.out.print("Peso de la esfera c: ");
-        double c = sc.nextDouble();
-    
-    }
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        //ejercicio 22
-        //empleado(sc);
-        //Ejercicio 23
-        //cuadratica(sc);
-        //ejercicio 24
-        //esferas(sc);
+        // EJERCICIO 22
+        // employee(sc);
+        // EJERCICIO 23
+        // quadraticEC(sc);
+        // EJERCICIO 24
+        // spheresWeight(sc);
 
     }
 
