@@ -1,4 +1,4 @@
-package exercises_cap3;
+package exercises_part1_cap3;
 
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
