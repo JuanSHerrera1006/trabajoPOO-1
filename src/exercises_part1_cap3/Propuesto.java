@@ -93,17 +93,9 @@ public class Propuesto {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         // EJERCICIO 18
-<<<<<<< HEAD:src/exercises_cap3/Propuesto.java
         // createEmployee(sc);
-
         // EJERCICIO 19
         // equilateralTriangle(sc);
-        
-=======
-        //createEmployee(sc);
-        // EJERCICIO 19
-        //equilateralTriangle(sc);
->>>>>>> ejercicios_4:src/exercises_part1_cap3/Propuesto.java
         // EJERCICIO 21
         // overallTriangle(sc);
     }
