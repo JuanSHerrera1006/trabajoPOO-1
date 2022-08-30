@@ -94,10 +94,8 @@ public class Propuesto {
         Scanner sc = new Scanner(System.in);
         // EJERCICIO 18
         //createEmployee(sc);
-
         // EJERCICIO 19
         //equilateralTriangle(sc);
-        
         // EJERCICIO 21
         //overallTriangle(sc);
     }
